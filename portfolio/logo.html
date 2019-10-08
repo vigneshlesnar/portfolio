@@ -3,172 +3,137 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-      <link rel="stylesheet" href="swiper.min.css">
-    <link rel="stylesheet" href="style.css">
+      <!-- <link rel="stylesheet" href="swiper.min.css">
+    <link rel="stylesheet" href="style.css"> -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
   
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Logo</title>
+    <style>
+      body{
+        background-color: red; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to right,#240b36, #c31432) /* Standard syntax (must be last) */
+      }
+.cont,.image,.overlay {box-sizing: border-box;}
+
+.cont {
+  position: relative;
+  width: 100%;
+  /*max-width: 500px;*/
+  height: 100%;
+}
+
+.image {
+  display: block;
+  width: 70%;
+  height: 70%;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+}
+
+.cont:hover .overlay {
+  opacity: 1;
+}
+.overlay a{
+  text-decoration: none;
+  color: #fff;
+}
+</style>
 </head>
 <body>
-
-    <!-- Swiper -->
-  <div class="swiper-container">
-        <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-                <div class="imgBx">
-                      <img src="3.jpg" alt="">
-                </div>
-                <div class="details">
-                    <h3 style="  margin: 0;
-                    padding: 0;
-                    font-size: 20px;
-                    text-align: center;
-                    line-height: 20px;color:darkblue">Silkkraft<span></span></h3>
-                </div>
-            </div>
-              
-       
-            <div class="swiper-slide">
-                    <div class="imgBx ">
-                      <div class="imagec">
-                          <img src="nursing3.png" alt="" style="width: 70%;"></div>
-                    </div>
-                    <div class="details">
-                        <h3 style="  margin: 0;
-                        
-                        padding: 0;
-                        font-size: 20px;
-                        text-align: center;
-                        line-height: 20px;color:darkblue">Sri Shanmugha College of Nursing for Women</h3>
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="imgBx"><div class="imagec">
-                          <img src="grango.jpg" alt=""></div>
-                    </div>
-                    <div class="details">
-                        <h3 style="  margin: 0;
-                        padding: 0;
-                        font-size: 20px;
-                        text-align: center;
-                        line-height: 20px;color:darkblue">Grango</h3>
-                    </div>
-                </div>
-
-                    <div class="swiper-slide">
-                          <div class="imgBx">
-                                <img src="padikattu.jpg" alt="">
-                          </div>
-                          <div class="details">
-                              <h3 style="  margin: 0;
-                              padding: 0;
-                              font-size: 20px;
-                              text-align: center;
-                              line-height: 20px;color:darkblue">Padikattu</h3>
-                          </div>
-                      </div>
-
-                      
-                   
-                    <div class="swiper-slide">
-                            <div class="imgBx"><div class="imagec">
-                                  <img src="qc2.png" alt=""></div>
-                            </div>
-                            <div class="details">
-                                <h3 style="  margin: 0;
-                                padding: 0;
-                                font-size: 20px;
-                                text-align: center;
-                                line-height: 20px;color:darkblue">Quark Quardical</h3>
-                            </div>
-                        </div>
-
-                        
-
-                        <div class="swiper-slide">
-                                <div class="imgBx"><div class="imagec">
-                                      <img src="Fintechgie.png" alt=""></div>
-                                </div>
-                                <div class="details">
-                                    <h3 style="  margin: 0;
-                                    padding: 0;
-                                    font-size: 20px;
-                                    text-align: center;
-                                    line-height: 20px;color:darkblue">Fintechgie</h3>
-                                </div>
-                            </div>
-                            <div class="swiper-slide">
-                                <div class="imgBx"><div class="imagec">
-                                      <img src="tygate.png" alt=""></div>
-                                </div>
-                                <div class="details">
-                                    <h3 style="  margin: 0;
-                                    padding: 0;
-                                    font-size: 20px;
-                                    text-align: center;
-                                    line-height: 20px;color:darkblue">Tygate</h3>
-                                </div>
-                            </div>
-
-                            <div class="swiper-slide">
-                              <div class="imgBx">
-                                    <img src="req.png" alt="">
-                              </div>
-                              <div class="details">
-                                  <h3 style="  margin: 0;
-                                  padding: 0;
-                                  font-size: 20px;
-                                  text-align: center;
-                                  line-height: 20px;color:darkblue" >Req Res</h3>
-                              </div>
-                          </div>
-                          <div class="swiper-slide">
-                              <div class="imgBx"><div class="imagec">
-                                    <img src="skt.jpg" alt=""></div>
-                              </div>
-                              <div class="details">
-                                  <h3 style="  margin: 0;
-                                  padding: 0;
-                                  font-size: 20px;
-                                  text-align: center;
-                                  line-height: 20px;color:darkblue" >Sri Kannan Textiles</h3>
-                              </div>
-                          </div>
-
-                            <div class="swiper-slide">
-                            <div class="imgBx">
-                                  <img src="2.png" alt="">
-                            </div>
-                            <div class="details">
-                                <h3 style="  margin: 0;
-                                padding: 0;
-                                font-size: 20px;
-                                text-align: center;
-                                line-height: 20px;color:darkblue">Alagumuthu-Agro</h3>
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                              <div class="imgBx">
-                                    <img src="1.png" alt="">
-                              </div>
-                              <div class="details">
-                                  <h3 style="  margin: 0;
-                                  padding: 0;
-                                  font-size: 20px;
-                                  text-align: center;
-                                  line-height: 20px;color:darkblue" >Agri project </h3>
-                              </div>
-                          </div>
-                      
+  <div class="container" style="margin-top: 5%">
+    <h2 style="text-align: center;color: #fff;">Logo's</h2>
+    <div class="row" style="margin-top: 3%">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="3.jpg" alt="greefitech" class="image">
+          <div class="overlay"> Silkkraft </div>
         </div>
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
       </div>
-    <h1 style="text-align: center;color:white;text-shadow:2px 2px 3px #a3a3a3;font-weight:500;">PROJECTS :::: LOGO</h1>
-      <!-- Swiper JS -->
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="nursing3.png" alt="SSCET" class="image">
+          <div class="overlay"> SSCONW </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="grango.jpg" alt="SSCOP" class="image">
+          <div class="overlay"> Grango </div>
+        </div>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 3%">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="padikattu.jpg" alt="SSCONW" class="image">
+          <div class="overlay"> Padikattu </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="qc2.png" alt="" class="image">
+          <div class="overlay">   Quark Quardical</div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="Fintechgie.png" alt="Padikattu" class="image">
+          <div class="overlay"> Fintechgie </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 3%">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="tygate.png" alt="My Vechile" class="image">
+          <div class="overlay"> Tygate </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="skt.jpg" alt="thottakaaran" class="image">
+          <div class="overlay"> Sri Kannan Textiles </div>
+        </div>
+      </div>
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="2.png" alt="Kolasaraswathi" class="image">
+          <div class="overlay"> <a href="https://vigneshlesnar.github.io/kolasaraswathi/" target="_blank">Alagumuthu-Agro</a> </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" style="margin-top: 3%">
+      <div class="col-12 col-sm-12 col-md-6 col-lg-4 col-xl-4">
+        <div class="cont">
+          <img src="1.png" alt="greefitech" class="image">
+          <div class="overlay"> Agri project  </div>
+        </div>
+      </div>
+      </div>
+
+  </div>
+
+  <div class="row" style="margin-top: 3%"></div>
       <script src="../dist/js/swiper.min.js"></script>
     
       <!-- Initialize Swiper -->
